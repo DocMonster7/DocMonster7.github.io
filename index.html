@@ -1,44 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href=""> -->
-
     <title>Document</title>
+
+    <!-- Add this to <head> -->
+
+<!-- Load required Bootstrap and BootstrapVue CSS -->
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+
+<!-- Load polyfills to support older browsers -->
+<script src="//polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver" crossorigin="anonymous"></script>
+
+<!-- Load Vue followed by BootstrapVue -->
+<script src="//unpkg.com/vue@latest/dist/vue.min.js"></script>
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+
+<!-- Load the following for BootstrapVueIcons support -->
+<script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
 </head>
-
 <body>
-    <div class="container">
-
-        <h1 class="text-light bg-dark ">hello world</h1>
-        <p>this is a world</p>
-
-        <!-- <select class="form-select" size="3" aria-label="size 3 select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select> -->
+    <div id="app">
         <div>
+            <b-navbar type="dark" variant="dark">
+              <b-navbar-nav>
+                <b-nav-item href="index.html">System Of A Down</b-nav-item>
+          
+                <!-- Navbar dropdowns -->
+                <!-- <b-nav-item-dropdown text="Lang" right>
+                  <b-dropdown-item href="#">EN</b-dropdown-item>
+                  <b-dropdown-item href="#">ES</b-dropdown-item>
+                  <b-dropdown-item href="#">RU</b-dropdown-item>
+                  <b-dropdown-item href="#">FA</b-dropdown-item>
+                </b-nav-item-dropdown> -->
+          
+                <!-- <b-nav-item-dropdown text="User" right>
+                  <b-dropdown-item href="#">Account</b-dropdown-item>
+                  <b-dropdown-item href="#">Settings</b-dropdown-item>
+                </b-nav-item-dropdown> -->
+              </b-navbar-nav>
+            </b-navbar>
+          </div>
 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+          <div class="container">
+            <b-container fluid class="p-4 bg-dark">
+                <b-row>
+                  <b-col>
+                    <b-img thumbnail fluid src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/System_of_a_down.jpg/220px-System_of_a_down.jpg" alt="Image 1"></b-img>
+                  </b-col>
+                  <b-col>
+                    <b-img thumbnail fluid src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/SystemofaDownToxicityalbumcover.jpg/220px-SystemofaDownToxicityalbumcover.jpg" alt="Image 2"></b-img>
+                  </b-col>
+                  <b-col>
+                    <b-img thumbnail fluid src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/StealThisAlbum.png/220px-StealThisAlbum.png" alt="Image 3"></b-img>
+                  </b-col>
+                  <b-col>
+                    <b-img thumbnail fluid src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Mezmerize-LP.jpg/220px-Mezmerize-LP.jpg" alt="Image 4"></b-img>
+                  </b-col>
+                  <b-col>
+                    <b-img thumbnail fluid src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/System_Of_A_Down-Hypnotize.jpg/220px-System_Of_A_Down-Hypnotize.jpg" alt="Image 5"></b-img>
+                  </b-col>
+                </b-row>
+              </b-container>
+
+              <div>
+                <div class="mt-4">
+                    <h4>SYSTEM OF A DOWN (SELF TITLED)</h4>
+                    <b-card img-src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/System_of_a_down.jpg/220px-System_of_a_down.jpg" img-alt="Card image" img-left class="mb-3">
+                      <b-card-text>
+                        <ul>
+                            <li>Suite-Pee</li>
+                            <li>Know</li>
+                            <li>Sugar</li>
+                            <li>Suggestions</li>
+                            <li>Spiders</li>
+                            <li>DDevel</li>
+                            <li>Soil</li>
+                            <li>War?</li>
+                            <li>Mind</li>
+                            <li>Peephole</li>
+                            <li>CUBErt</li>
+                            <li>Darts</li>
+                            <li>P.L.U.C.K. (Politically Lying, Unholy, Cowardly Killers)</li>
+                        </ul>
+                        
+                      </b-card-text>
+                    </b-card>
+                    Playing : P.L.U.C.K. (Politically Lying, Unholy, Cowardly Killers) <br>
+                    <audio controls>
+                        <source src="13 P.L.U.C.K..mp3" type="audio/mp3">
+                        
+                      Your browser does not support the audio element.
+                      </audio>
+                     
+
+              </div>
+              <div class="mt-4">
+                <h4>Toxicity</h4>
+              <b-card img-src="https://upload.wikimedia.org/wikipedia/en/thumb/6/64/SystemofaDownToxicityalbumcover.jpg/220px-SystemofaDownToxicityalbumcover.jpg" img-alt="Card image" img-right>
+                <b-card-text>
+                  <ul>
+                      <li>Prison Song</li>
+                      <li>Needles</li>
+                      <li>Deer Dance</li>
+                      <li>Jet Pilot</li>
+                      <li>X</li>
+                      <li>Chop Suey!</li>
+                      <li>Bounce</li>
+                      <li>Forest</li>
+                      <li>ATWA ("Air Trees Water Animals")</li>
+                      <li>Science</li>
+                      <li>Shimmy</li>
+                      <li>Toxicity</li>
+                      <li>Psycho</li>
+                      <li>Aerials</li>
+                  </ul>
+                </b-card-text>
+              </b-card>
+              </div>
+              Playing: Chop Suey! <br>
+              <audio controls>
+                <source src="06-Chop suey!.mp3" type="audio/mp3">
+                
+              Your browser does not support the audio element.
+              </audio>
+          </div>
+
+          <div class="mt-4">
+            <h4>Steal This Album!</h4>
+          <b-card img-src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/StealThisAlbum.png/220px-StealThisAlbum.png" img-alt="Card image" img-right>
+            <b-card-text>
+              <ul>
+                  <li>Chic 'N' Stu</li>
+                  <li>Innervision</li>
+                  <li>Bubbles</li>
+                  <li>Boom!</li>
+                  <li>Nüguns</li>
+                  <li>A.D.D. (American Dream Denial)</li>
+                  <li>Mr. Jack</li>
+                  <li>I-E-A-I-A-I-O</li>
+                  <li>36</li>
+                  <li>Pictures</li>
+                  <li>Highway Song</li>
+                  <li>Fuck the System</li>
+                  <li>Ego Brain</li>
+                  <li>Thetawaves</li>
+                  <li>Roulette</li>
+                  <li>Streamline</li>
+              </ul>
+            </b-card-text>
+          </b-card>
+          Playing: Chic 'n' Stu <br>
+          <audio controls>
+            <source src="01 Chic 'n' Stu.mp3" type="audio/mp3">
+            
+          Your browser does not support the audio element.
+          </audio>
+          </div>
+          <div class="mt-4">
+            <h4>Mezmerize</h4>
+          <b-card img-src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Mezmerize-LP.jpg/220px-Mezmerize-LP.jpg" img-alt="Card image" img-right>
+            <b-card-text>
+              <ul>
+                 <li>Soldier Side - Intro</li>
+                 <li>B.Y.O.B. ("Bring Your Own Bombs")</li>
+                 <li>Revenga</li>
+                 <li>Cigaro</li>
+                 <li>Radio/Video</li>
+                 <li>This Cocaine Makes Me Feel Like I'm on This Song</li>
+                 <li>Violent Pornography</li>
+                 <li>Question!</li>
+                 <li>Sad Statue</li>
+                 <li>Old School Hollywood</li>
+                 <li>Lost in Hollywood</li> 
+              </ul>
+            </b-card-text>
+          </b-card>
+          Playing: This Cocaine Makes Me Feel Like I'm On This Song <br>
+          <audio controls>
+            <source src="06 This Cocaine Makes Me Feel Like I'm On This Song.mp3" type="audio/mp3">
+            
+          Your browser does not support the audio element.
+          </audio>
+          </div>
+      
+    
+      <div class="mt-4">
+        <h4>Hypnotize</h4>
+      <b-card img-src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/System_Of_A_Down-Hypnotize.jpg/220px-System_Of_A_Down-Hypnotize.jpg" img-alt="Card image" img-right>
+        <b-card-text>
+          <ul>
+              <li>Attack</li>
+              <li>Dreaming</li>
+              <li>Kill Rock 'n Roll</li>
+              <li>Hypnotize</li>
+              <li>Stealing Society</li>
+              <li>Tentative</li>
+              <li>U-Fig</li>
+              <li>Holy Mountains</li>
+              <li>Vicinity of Obscenity</li>
+              <li>She's Like Heroin</li>
+              <li>Lonely Day</li>
+              <li>Soldier Side</li>
+          </ul>
+        </b-card-text>
+      </b-card>
+      Playing: Soldier Side <br>
+      <audio controls>
+        <source src="12 - Soldier Side.mp3" type="audio/mp3">
+        
+      Your browser does not support the audio element.
+      </audio>
+      </div>
         </div>
 
+      
+</div>
     </div>
 
+<script>
+    var app = new Vue({
+  el: '#app',
+  data: {
+    //message: 'Hello Vue!',
+    message: 'You loaded this page on ' + new Date().toLocaleString()
+  }
+})
+
+</script>
 
 </body>
-
 </html>
